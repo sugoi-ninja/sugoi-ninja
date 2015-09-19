@@ -1,0 +1,18 @@
+{
+  "image": "goalB_s",
+  "frame": {
+    "width": 125,
+    "height": 125,
+    "count": 3
+  },
+  "animations": {
+    
+    "normal": {
+      "frames": [1, 2, 0],
+      "next": "normal",
+      "frequency": 4
+    }
+    
+    
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "image": "samuraiAS_hayai",
+  "frame": {
+    "width": 125,
+    "height": 125,
+    "count": 4
+  },
+  "animations": {
+    
+    "0wait": {
+      "frames": [0],
+      "next": "0wait",
+      "frequency": 5
+    },
+    "1wait": {
+      "frames": [1],
+      "next": "1wait",
+      "frequency": 5
+    },
+    "2wait": {
+      "frames": [2],
+      "next": "2wait",
+      "frequency": 5
+    },
+    "3wait": {
+      "frames": [3],
+      "next": "3wait",
+      "frequency": 5
+    }
+    
+    
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "image": "",
+  "frame": {
+    "width": 125,
+    "height": 125,
+    "count": 4
+  },
+  "animations": {
+    
+    "top": {
+      "frames": [0],
+      "next": "top",
+      "frequency": 5
+    },
+    "right": {
+      "frames": [1],
+      "next": "right",
+      "frequency": 5
+    },
+    "bottom": {
+      "frames": [2],
+      "next": "bottom",
+      "frequency": 5
+    },
+    "left": {
+      "frames": [3],
+      "next": "left",
+      "frequency": 5
+    }
+    
+    
+  }
+}

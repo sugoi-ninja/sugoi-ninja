@@ -1,0 +1,21 @@
+{
+  "image": "makimono_s",
+  "frame": {
+    "width": 142,
+    "height": 186,
+    "count": 2
+  },
+  "animations": {
+    
+    "close": {
+      "frames": [1, 0],
+      "frequency": 2
+    },
+    
+    "open": {
+      "frames": [0, 1],
+      "frequency": 2
+    }
+    
+  }
+}

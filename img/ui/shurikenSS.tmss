@@ -1,0 +1,23 @@
+{
+  "image": "shuriken_s",
+  "frame": {
+    "width": 210,
+    "height": 210,
+    "count": 4
+  },
+  "animations": {
+    
+    "stop": {
+      "frames": [0],
+      "next": "stop",
+      "frequency": 10
+    },
+    
+    "spin": {
+      "frames": [1, 2, 3],
+      "next": "spin",
+      "frequency": 2
+    }
+    
+  }
+}
