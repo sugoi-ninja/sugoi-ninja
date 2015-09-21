@@ -59,9 +59,9 @@ n.global = window || global || this;
 
   // 本番用
     
-  var _isConnectAPI = true;
-  var _isUseLocalStorage = false;
   
+  var _isConnectAPI = false;
+  var _isUseLocalStorage = true;
   ns.hiscore = 0;
   ns.gamelevel = 0;
   
