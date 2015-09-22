@@ -26,5 +26,6 @@ tm.main(function() {
   }));
 
   app.run();
-});
 
+  tm.dom.Element(".three_ribbon").attr.add("class", "show");
+});
