@@ -59,9 +59,9 @@ n.global = window || global || this;
 
   // 本番用
     
-  var _isConnectAPI = true;
-  var _isUseLocalStorage = false;
   
+  var _isConnectAPI = false;
+  var _isUseLocalStorage = true;
   ns.hiscore = 0;
   ns.gamelevel = 0;
   
@@ -327,19 +327,26 @@ n.global = window || global || this;
     'start': new Audio(_src+'start'+_ext),
     'title': new Audio(_src+'title'+_ext),
   };
-  
-  ns.playAudio = function(name, isLoop) {
-    if (isPlaying(_audio[name]))
+
+  var _volume = 0.5;
+
+  var play = function(audio) {
+    if (isPlaying(audio))
       return;
-    _audio[name].load();
-    _audio[name].play();
+
+    audio.load();
+    audio.volume = _volume;
+    audio.play();
+  }
+
+  ns.playAudio = function(name, isLoop) {
+    play(_audio[name]);
+
     if (isLoop) {
       _audio[name].addEventListener('ended', function(e) {
-        
         e.target.pause();
         e.target.currentTime = 0;
-        e.target.load();
-        e.target.play();
+        play(e.target);
       }, false);
     }
   };
