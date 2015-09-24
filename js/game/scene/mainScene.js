@@ -7,6 +7,8 @@ tm.define('scene.MainScene', {
   init: function(stageNum) {
     this.superInit();
     
+    tm.dom.Element(".three_ribbon").attr.remove("class", "show");
+
     var self = this;
     
     this.stageNum = stageNum;
@@ -87,6 +89,7 @@ tm.define('scene.MainScene', {
       this.currentSceneIndex = 2;
       this.app.pushScene(scene.ResultScene(
         this.stageNum, isClear, numberOfMoves, hasKoban, this.stage.shortestNumberOfMoves));
+      tm.dom.Element(".three_ribbon").attr.add("class", "show");
     }.bind(this));
     
   },
@@ -105,6 +108,7 @@ tm.define('scene.MainScene', {
   
   return2SelectScene: function() {
     n.setResult2select(false, null);
+    tm.dom.Element(".three_ribbon").attr.add("class", "show");
     this.pop(0);
   },
 
