@@ -3,26 +3,5 @@ html, body {
 }
 
 .three_ribbon {
-  width: 20%;
-  height: auto;
-  line-height: 0;
-  position: fixed;
-  bottom: 0;
-  transition-property: left;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in;
-  transition-delay: 0ms;
-  left: -20%;
-}
-
-.three_ribbon.show {
-  transition-timing-function: ease-out;
-  transition-duration: 300ms;
-  transition-delay: 1000ms;
-  left: 0;
-}
-
-.three_ribbon img {
-  width: 100%;
-  height: 100%;
+  display: none;
 }
